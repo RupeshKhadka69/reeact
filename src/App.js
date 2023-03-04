@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+// import React from 'react'
+// function App() {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//     return(
+//         <div>
+//             <h1>this is the heading</h1>
+//         </div>
+//     )
+// }
+// export default App
+
+import React from 'react'
+class App extends React.Component {
+    componentDidMount(){
+        console.log("everything is done");
+    }
+
+    render() {
+        console.log('render is called')
+        return (
+            <div>
+
+                <h1>this is the class of react</h1>  
+                <h1>this is the class of react</h1>  
+            </div>
+        )   
+    }
+
+    constructor() {
+        super() 
+        console.log('constructor is called')
+        
+    }
+   
 }
-
-export default App;
+export default  App;
